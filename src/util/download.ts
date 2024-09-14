@@ -46,6 +46,7 @@ async function downloadToNodeModules(
 
   // Download the tarball
   await new Promise((resolve, reject) => {
+    console.log("tarballPath is " + tarballPath)
     const fileStream = fs.createWriteStream(tarballPath);
 
     https

@@ -14,7 +14,6 @@ export async function addPackage(pkg: string) {
     });
     version = info.version;
   }
-
   // Create output dir and package.json if not exist
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir);
